@@ -1,0 +1,149 @@
+{\rtf1\ansi\deff0{\fonttbl{\f0\fnil\fcharset134 \'cb\'ce\'cc\'e5;}}
+{\colortbl ;\red255\green0\blue0;}
+{\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\sa200\sl276\slmult1\lang2052\f0\fs22 00E101E6    68 80EC2801     PUSH League_o.0128EC80                   ; ASCII "GAME_UI: (HeroInventory) Item %d gold cost is too expensive\par
+"\par
+00E101EB  ^ EB A5           JMP SHORT League_o.00E10192\par
+00E101ED    837E 34 00      CMP DWORD PTR DS:[ESI+34],0\par
+00E101F1    74 65           JE SHORT League_o.00E10258\par
+00E101F3    83BE 9C000000 0>CMP DWORD PTR DS:[ESI+9C],0\par
+00E101FA    7E 5C           JLE SHORT League_o.00E10258\par
+00E101FC    FF76 30         PUSH DWORD PTR DS:[ESI+30]\par
+00E101FF    8B8D 8C010000   MOV ECX,DWORD PTR SS:[EBP+18C]\par
+00E10205    8D4424 1C       LEA EAX,DWORD PTR SS:[ESP+1C]\par
+00E10209    50              PUSH EAX\par
+00E1020A    E8 F163EFFF     CALL League_o.00D06600\par
+00E1020F    8B4424 18       MOV EAX,DWORD PTR SS:[ESP+18]\par
+00E10213    85C0            TEST EAX,EAX\par
+00E10215    74 38           JE SHORT League_o.00E1024F\par
+00E10217    8B40 74         MOV EAX,DWORD PTR DS:[EAX+74]\par
+00E1021A    3B86 9C000000   CMP EAX,DWORD PTR DS:[ESI+9C]\par
+00E10220    7D 2D           JGE SHORT League_o.00E1024F\par
+00E10222    A1 48D08E01     MOV EAX,DWORD PTR DS:[18ED048]\par
+00E10227    53              PUSH EBX\par
+00E10228    68 F0BB2B01     PUSH League_o.012BBBF0                   ; ASCII "GAME_UI: (HeroInventory) Item %d buff currency cost is too expensive\par
+"\par
+00E1022D    FF35 4CD08E01   PUSH DWORD PTR DS:[18ED04C]\par
+00E10233    83C8 01         OR EAX,1\par
+00E10236    50              PUSH EAX\par
+00E10237    6A 02           PUSH 2\par
+00E10239    E8 72E8BBFF     CALL League_o.009CEAB0\par
+00E1023E    83C4 14         ADD ESP,14\par
+00E10241    8D4C24 18       LEA ECX,DWORD PTR SS:[ESP+18]\par
+00E10245    E8 266C74FF     CALL League_o.00556E70\par
+00E1024A  ^ E9 5CFFFFFF     JMP League_o.00E101AB\par
+00E1024F    8D4C24 18       LEA ECX,DWORD PTR SS:[ESP+18]\par
+00E10253    E8 186C74FF     CALL League_o.00556E70\par
+00E10258    807F 14 00      CMP BYTE PTR DS:[EDI+14],0\par
+00E1025C    75 0B           JNZ SHORT League_o.00E10269\par
+00E1025E    53              PUSH EBX\par
+00E1025F    68 603A2C01     PUSH League_o.012C3A60                   ; ASCII "GAME_UI: (HeroInventory) Item %d marked as not in store\par
+"\par
+00E10264  ^ E9 29FFFFFF     JMP League_o.00E10192\par
+00E10269    8D4C24 20       LEA ECX,DWORD PTR SS:[ESP+20]\par
+\cf1 00E1026D    E8 5E49E2FF     CALL League_o.00C34BD0                   ; \'cc\'ee\'b3\'e4\'ce\'ef\'c6\'b7\'b9\'ba\'c2\'f2\'bd\'e1\'b9\'b9\cf0\par
+00E10272    C74424 3C 00000>MOV DWORD PTR SS:[ESP+3C],0\par
+00E1027A    8D7424 2A       LEA ESI,DWORD PTR SS:[ESP+2A]\par
+00E1027E    B8 54010000     MOV EAX,154\par
+00E10283    BF 04000000     MOV EDI,4\par
+00E10288    66:894424 24    MOV WORD PTR SS:[ESP+24],AX              ; ...\'c4\'ac\'c8\'cf\'be\'cd\'ca\'c7154\par
+00E1028D    8B85 90010000   MOV EAX,DWORD PTR SS:[EBP+190]\par
+00E10293    8B40 04         MOV EAX,DWORD PTR DS:[EAX+4]\par
+00E10296    8B80 90000000   MOV EAX,DWORD PTR DS:[EAX+90]\par
+00E1029C    8B00            MOV EAX,DWORD PTR DS:[EAX]\par
+00E1029E    894424 26       MOV DWORD PTR SS:[ESP+26],EAX            ; 4000005\par
+00E102A2    895C24 2A       MOV DWORD PTR SS:[ESP+2A],EBX            ; EBX=ID\par
+00E102A6    8A0E            MOV CL,BYTE PTR DS:[ESI]\par
+\cf1 00E102A8    E8 03771200     CALL League_o.00F379B0                   ; \'d1\'ad\'bb\'b7\'bc\'d3\'c3\'dc\'ce\'ef\'c6\'b7ID\cf0\par
+00E102AD    8806            MOV BYTE PTR DS:[ESI],AL\par
+00E102AF    8D76 01         LEA ESI,DWORD PTR DS:[ESI+1]\par
+00E102B2    4F              DEC EDI\par
+00E102B3  ^ 75 F1           JNZ SHORT League_o.00E102A6\par
+00E102B5    8D4C24 18       LEA ECX,DWORD PTR SS:[ESP+18]\par
+00E102B9    897C24 18       MOV DWORD PTR SS:[ESP+18],EDI\par
+00E102BD    895C24 1C       MOV DWORD PTR SS:[ESP+1C],EBX\par
+00E102C1    E8 BA1CC6FF     CALL League_o.00A71F80\par
+00E102C6    8B8D 90010000   MOV ECX,DWORD PTR SS:[EBP+190]\par
+00E102CC    8D4424 20       LEA EAX,DWORD PTR SS:[ESP+20]\par
+00E102D0    50              PUSH EAX\par
+\cf1 00E102D1    E8 EA6A74FF     CALL League_o.00556DC0................\cf0\par
+00E102D6    B0 01           MOV AL,1\par
+00E102D8  ^ E9 D0FEFFFF     JMP League_o.00E101AD\par
+\par
+\par
+\par
+00556DC0    6A FF           PUSH -1\par
+00556DC2    68 386A1801     PUSH League_o.01186A38\par
+00556DC7    64:A1 00000000  MOV EAX,DWORD PTR FS:[0]\par
+00556DCD    50              PUSH EAX\par
+00556DCE    83EC 14         SUB ESP,14\par
+00556DD1    56              PUSH ESI\par
+00556DD2    A1 E0364F01     MOV EAX,DWORD PTR DS:[14F36E0]\par
+00556DD7    33C4            XOR EAX,ESP\par
+00556DD9    50              PUSH EAX\par
+00556DDA    8D4424 1C       LEA EAX,DWORD PTR SS:[ESP+1C]\par
+00556DDE    64:A3 00000000  MOV DWORD PTR FS:[0],EAX\par
+00556DE4    8BF1            MOV ESI,ECX\par
+00556DE6    C74424 0C 00000>MOV DWORD PTR SS:[ESP+C],0\par
+00556DEE    C74424 10 00000>MOV DWORD PTR SS:[ESP+10],0\par
+00556DF6    E8 E54E0300     CALL League_o.0058BCE0                   ; 3\par
+00556DFB    894424 0C       MOV DWORD PTR SS:[ESP+C],EAX\par
+00556DFF    8D4424 08       LEA EAX,DWORD PTR SS:[ESP+8]\par
+00556E03    C74424 24 00000>MOV DWORD PTR SS:[ESP+24],0\par
+00556E0B    50              PUSH EAX\par
+00556E0C    83EC 10         SUB ESP,10\par
+00556E0F    C74424 1C 01000>MOV DWORD PTR SS:[ESP+1C],1\par
+00556E17    8BCE            MOV ECX,ESI\par
+00556E19    FF35 789C4501   PUSH DWORD PTR DS:[1459C78]\par
+00556E1F    FF7424 44       PUSH DWORD PTR SS:[ESP+44]\par
+\cf1 00556E23    E8 D8B97200     CALL League_o.00C82800                   ; 1\cf0\par
+00556E28    8B4424 0C       MOV EAX,DWORD PTR SS:[ESP+C]\par
+00556E2C    8D4C24 0C       LEA ECX,DWORD PTR SS:[ESP+C]\par
+00556E30    50              PUSH EAX\par
+00556E31    FF30            PUSH DWORD PTR DS:[EAX]\par
+00556E33    8D4424 34       LEA EAX,DWORD PTR SS:[ESP+34]\par
+00556E37    50              PUSH EAX\par
+00556E38    E8 A3E70500     CALL League_o.005B55E0\par
+00556E3D    FF7424 0C       PUSH DWORD PTR SS:[ESP+C]\par
+00556E41    E8 1A621A00     CALL League_o.006FD060\par
+00556E46    8B4424 0C       MOV EAX,DWORD PTR SS:[ESP+C]\par
+00556E4A    83C4 04         ADD ESP,4\par
+00556E4D    8B4C24 1C       MOV ECX,DWORD PTR SS:[ESP+1C]\par
+00556E51    64:890D 0000000>MOV DWORD PTR FS:[0],ECX\par
+00556E58    59              POP ECX\par
+00556E59    5E              POP ESI\par
+00556E5A    83C4 20         ADD ESP,20\par
+00556E5D    C2 0400         RETN 4\par
+\par
+\par
+00C82800    8BFF            MOV EDI,EDI\par
+00C82802    51              PUSH ECX\par
+00C82803    8B4424 20       MOV EAX,DWORD PTR SS:[ESP+20]\par
+00C82807    56              PUSH ESI\par
+00C82808    C700 02000000   MOV DWORD PTR DS:[EAX],2\par
+00C8280E    8B41 04         MOV EAX,DWORD PTR DS:[ECX+4]\par
+00C82811    8BB0 90000000   MOV ESI,DWORD PTR DS:[EAX+90]\par
+00C82817    8B36            MOV ESI,DWORD PTR DS:[ESI]\par
+00C82819    3B35 B8381803   CMP ESI,DWORD PTR DS:[31838B8]\par
+00C8281F    75 1E           JNZ SHORT League_o.00C8283F\par
+00C82821    68 A4502401     PUSH League_o.012450A4\par
+00C82826    68 A4502401     PUSH League_o.012450A4\par
+00C8282B    6A 00           PUSH 0\par
+00C8282D    68 A4502401     PUSH League_o.012450A4\par
+00C82832    68 30F12401     PUSH League_o.0124F130                   ; ASCII "ALE-CEB73A61"\par
+00C82837    E8 C4C0C5FF     CALL League_o.008DE900\par
+00C8283C    83C4 14         ADD ESP,14\par
+00C8283F    8B5424 0C       MOV EDX,DWORD PTR SS:[ESP+C]\par
+00C82843    8B0D 00CE1903   MOV ECX,DWORD PTR DS:[319CE00]\par
+00C82849    6A 00           PUSH 0                                   ; 6A006A01897206\par
+00C8284B    6A 01           PUSH 1\par
+00C8284D    8972 06         MOV DWORD PTR DS:[EDX+6],ESI             ; \'d0\'de\'b8\'c4Flag\par
+00C82850    8B01            MOV EAX,DWORD PTR DS:[ECX]\par
+00C82852    52              PUSH EDX\par
+\cf1 00C82853    FF50 34         CALL DWORD PTR DS:[EAX+34]               ; \'b7\'a2\'b0\'fc\cf0\par
+00C82856    B0 01           MOV AL,1\par
+00C82858    5E              POP ESI\par
+00C82859    59              POP ECX\par
+00C8285A    C2 1C00         RETN 1C\par
+\par
+}
+ 

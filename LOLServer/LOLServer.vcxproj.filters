@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{d5b4a5b5-cc04-478b-b6a5-78496ab9d2ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{e1ff54c1-ed53-431e-8d6b-fa4379cb04f4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MyTools\MyTools\AES.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MyTools\MyTools\Character.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MyTools\MyTools\CLFile.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MyTools\MyTools\CLGrammar.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MyTools\MyTools\CLHook.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MyTools\MyTools\CLInjector.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MyTools\MyTools\CLLock.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MyTools\MyTools\CLProcess.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MyTools\MyTools\CLSearchBase.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MyTools\MyTools\CLThread.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MyTools\MyTools\CPublic.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MyTools\MyTools\PrintLog.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="VerSocket.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VerificationSystem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginManger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DataBaseModel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\MyTools\MyTools\AES.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MyTools\MyTools\Character.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MyTools\MyTools\CLFile.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MyTools\MyTools\CLGrammar.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MyTools\MyTools\CLHead.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MyTools\MyTools\CLHook.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MyTools\MyTools\CLInjector.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MyTools\MyTools\CLLock.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MyTools\MyTools\CLProcess.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MyTools\MyTools\CLPublic.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MyTools\MyTools\CLSearchBase.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MyTools\MyTools\CLThread.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MyTools\MyTools\CLVector.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MyTools\MyTools\PrintLog.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MyTools\MyTools\ToolsPublic.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\st_asio_wrapper.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\st_asio_wrapper_base.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\st_asio_wrapper_client.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\st_asio_wrapper_connector.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\st_asio_wrapper_object_pool.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\st_asio_wrapper_packer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\st_asio_wrapper_server.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\st_asio_wrapper_server_socket.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\st_asio_wrapper_service_pump.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\st_asio_wrapper_socket.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\st_asio_wrapper_ssl.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\st_asio_wrapper_tcp_client.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\st_asio_wrapper_tcp_socket.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\st_asio_wrapper_timer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\st_asio_wrapper_udp_client.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\st_asio_wrapper_udp_socket.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\st_asio_wrapper_unpacker.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="VerSocket.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VerificationSystem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LoginManger.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DataBaseModel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LOLProjects_China\GameStruct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ByteBuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

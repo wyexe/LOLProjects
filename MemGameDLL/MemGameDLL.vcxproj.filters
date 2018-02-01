@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{1f13c3ef-4216-4608-914e-98779966ab49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameResource">
+      <UniqueIdentifier>{1929eb53-7bab-47ea-86e1-37b6ecf30011}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object">
+      <UniqueIdentifier>{8c0dcba8-fd08-4a40-b7e8-2c47f0b0a9db}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MyTools\MyTools\AES.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MyTools\MyTools\Character.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MyTools\MyTools\CLFile.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MyTools\MyTools\CLGrammar.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MyTools\MyTools\CLHead.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MyTools\MyTools\CLHook.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MyTools\MyTools\CLInjector.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MyTools\MyTools\CLLock.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MyTools\MyTools\CLNoModuleDLL.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MyTools\MyTools\CLProcess.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MyTools\MyTools\CLPublic.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MyTools\MyTools\CLSearchBase.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MyTools\MyTools\CLThread.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MyTools\MyTools\CLVector.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MyTools\MyTools\PrintLog.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MyTools\MyTools\ToolsPublic.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LOLProjects_China\GameRes.h">
+      <Filter>GameResource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LOLProjects_China\Equment.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LOLProjects_China\Monster.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LOLProjects_China\PersonBuff.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LOLProjects_China\Skill.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LOLProjects_China\Field.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LOLProjects_China\FightFunction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LOLProjects_China\GameBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LOLProjects_China\GameFunction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LOLProjects_China\GameSend.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LOLProjects_China\GameStruct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LOLProjects_China\HookCode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MemGameDLL.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MyTools\MyTools\AES.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MyTools\MyTools\Character.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MyTools\MyTools\CLFile.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MyTools\MyTools\CLGrammar.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MyTools\MyTools\CLHook.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MyTools\MyTools\CLInjector.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MyTools\MyTools\CLLock.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MyTools\MyTools\CLNoModuleDLL.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MyTools\MyTools\CLProcess.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MyTools\MyTools\CLSearchBase.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MyTools\MyTools\CLThread.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MyTools\MyTools\CPublic.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MyTools\MyTools\PrintLog.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LOLProjects_China\GameRes.cpp">
+      <Filter>GameResource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LOLProjects_China\Equment.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LOLProjects_China\Monster.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LOLProjects_China\PersonBuff.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LOLProjects_China\Skill.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LOLProjects_China\FightFunction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LOLProjects_China\GameFunction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LOLProjects_China\GameBase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LOLProjects_China\FightFunction_Hero.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LOLProjects_China\GameSend.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LOLProjects_China\HookCode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LOLProjects_China\Field.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,195 @@
+{\rtf1\ansi\ansicpg936\deff0{\fonttbl{\f0\fnil\fcharset134 \'cb\'ce\'cc\'e5;}}
+{\colortbl ;\red255\green0\blue0;}
+{\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\sa200\sl276\slmult1\lang2052\f0\fs22 00D60448    8B43 20                 MOV EAX,DWORD PTR DS:[EBX+20]\par
+00D6044B    83C6 0C                 ADD ESI,0C\par
+00D6044E    2B43 1C                 SUB EAX,DWORD PTR DS:[EBX+1C]\par
+00D60451    89B5 40FFFFFF           MOV DWORD PTR SS:[EBP-C0],ESI\par
+00D60457    A9 F8FFFFFF             TEST EAX,FFFFFFF8\par
+00D6045C    0F8E 14010000           JLE League_o.00D60576\par
+00D60462    8BCB                    MOV ECX,EBX\par
+00D60464    E8 B737D5FF             CALL League_o.00AB3C20\par
+00D60469    FF70 04                 PUSH DWORD PTR DS:[EAX+4]\par
+00D6046C    E8 9F12D0FF             CALL League_o.00A61710\par
+00D60471    8985 54FFFFFF           MOV DWORD PTR SS:[EBP-AC],EAX\par
+00D60477    C785 6CFFFFFF 0F000000  MOV DWORD PTR SS:[EBP-94],0F\par
+00D60481    C785 68FFFFFF 00000000  MOV DWORD PTR SS:[EBP-98],0\par
+00D6048B    C685 58FFFFFF 00        MOV BYTE PTR SS:[EBP-A8],0\par
+00D60492    C645 FC 02              MOV BYTE PTR SS:[EBP-4],2\par
+00D60496    85C0                    TEST EAX,EAX\par
+00D60498    74 29                   JE SHORT League_o.00D604C3\par
+00D6049A    8BC8                    MOV ECX,EAX\par
+00D6049C    E8 1F391B00             CALL League_o.00F13DC0\par
+00D604A1    6A FF                   PUSH -1\par
+00D604A3    6A 00                   PUSH 0\par
+00D604A5    50                      PUSH EAX\par
+00D604A6    8D8D 58FFFFFF           LEA ECX,DWORD PTR SS:[EBP-A8]\par
+00D604AC    E8 6F9683FF             CALL League_o.00599B20\par
+00D604B1    6A 02                   PUSH 2\par
+00D604B3    68 340F1E01             PUSH League_o.011E0F34                   ; ASCII " ["\par
+00D604B8    8D8D 58FFFFFF           LEA ECX,DWORD PTR SS:[EBP-A8]\par
+00D604BE    E8 AD9EC4FF             CALL League_o.009AA370\par
+00D604C3    8BCB                    MOV ECX,EBX\par
+00D604C5    E8 5637D5FF             CALL League_o.00AB3C20\par
+00D604CA    6A FF                   PUSH -1\par
+00D604CC    6A 00                   PUSH 0\par
+00D604CE    83C0 24                 ADD EAX,24\par
+00D604D1    8D8D 58FFFFFF           LEA ECX,DWORD PTR SS:[EBP-A8]\par
+00D604D7    50                      PUSH EAX\par
+00D604D8    E8 439683FF             CALL League_o.00599B20\par
+00D604DD    83BD 54FFFFFF 00        CMP DWORD PTR SS:[EBP-AC],0\par
+00D604E4    74 12                   JE SHORT League_o.00D604F8\par
+00D604E6    6A 01                   PUSH 1\par
+00D604E8    68 DC542501             PUSH League_o.012554DC\par
+00D604ED    8D8D 58FFFFFF           LEA ECX,DWORD PTR SS:[EBP-A8]\par
+00D604F3    E8 789EC4FF             CALL League_o.009AA370\par
+00D604F8    3BBD 50FFFFFF           CMP EDI,DWORD PTR SS:[EBP-B0]\par
+00D604FE    75 12                   JNZ SHORT League_o.00D60512\par
+00D60500    51                      PUSH ECX\par
+00D60501    8D8D 48FFFFFF           LEA ECX,DWORD PTR SS:[EBP-B8]\par
+00D60507    E8 4400A3FF             CALL League_o.00790550\par
+00D6050C    8BBD 4CFFFFFF           MOV EDI,DWORD PTR SS:[EBP-B4]\par
+00D60512    89BD 34FFFFFF           MOV DWORD PTR SS:[EBP-CC],EDI\par
+00D60518    89BD 38FFFFFF           MOV DWORD PTR SS:[EBP-C8],EDI\par
+00D6051E    C645 FC 03              MOV BYTE PTR SS:[EBP-4],3\par
+00D60522    85FF                    TEST EDI,EDI\par
+00D60524    74 2A                   JE SHORT League_o.00D60550\par
+00D60526    6A FF                   PUSH -1\par
+00D60528    8D4F 04                 LEA ECX,DWORD PTR DS:[EDI+4]\par
+00D6052B    C707 3BB0AC7D           MOV DWORD PTR DS:[EDI],7DACB03B\par
+00D60531    6A 00                   PUSH 0\par
+00D60533    8D85 58FFFFFF           LEA EAX,DWORD PTR SS:[EBP-A8]\par
+00D60539    C741 14 0F000000        MOV DWORD PTR DS:[ECX+14],0F\par
+00D60540    C741 10 00000000        MOV DWORD PTR DS:[ECX+10],0\par
+00D60547    50                      PUSH EAX\par
+00D60548    C601 00                 MOV BYTE PTR DS:[ECX],0\par
+00D6054B    E8 3034D5FF             CALL League_o.00AB3980\par
+00D60550    83C7 1C                 ADD EDI,1C\par
+00D60553    C645 FC 01              MOV BYTE PTR SS:[EBP-4],1\par
+00D60557    83BD 6CFFFFFF 10        CMP DWORD PTR SS:[EBP-94],10\par
+00D6055E    89BD 4CFFFFFF           MOV DWORD PTR SS:[EBP-B4],EDI\par
+00D60564    72 4F                   JB SHORT League_o.00D605B5\par
+00D60566    FFB5 58FFFFFF           PUSH DWORD PTR SS:[EBP-A8]\par
+00D6056C    E8 6E97A7FF             CALL League_o.007D9CDF\par
+00D60571    83C4 04                 ADD ESP,4\par
+00D60574    EB 3F                   JMP SHORT League_o.00D605B5\par
+00D60576    C785 54FFFFFF 3BB0AC7D  MOV DWORD PTR SS:[EBP-AC],7DACB03B\par
+00D60580    3BBD 50FFFFFF           CMP EDI,DWORD PTR SS:[EBP-B0]\par
+00D60586    75 12                   JNZ SHORT League_o.00D6059A\par
+00D60588    51                      PUSH ECX\par
+00D60589    8D8D 48FFFFFF           LEA ECX,DWORD PTR SS:[EBP-B8]\par
+00D6058F    E8 BCFFA2FF             CALL League_o.00790550\par
+00D60594    8BBD 4CFFFFFF           MOV EDI,DWORD PTR SS:[EBP-B4]\par
+00D6059A    68 CB7F2701             PUSH League_o.01277FCB\par
+00D6059F    8D85 54FFFFFF           LEA EAX,DWORD PTR SS:[EBP-AC]\par
+00D605A5    50                      PUSH EAX\par
+00D605A6    57                      PUSH EDI\par
+00D605A7    E8 B444C6FF             CALL League_o.009C4A60\par
+00D605AC    83C7 1C                 ADD EDI,1C\par
+00D605AF    89BD 4CFFFFFF           MOV DWORD PTR SS:[EBP-B4],EDI\par
+00D605B5    33C0                    XOR EAX,EAX\par
+00D605B7    83C3 2C                 ADD EBX,2C\par
+00D605BA    899D 54FFFFFF           MOV DWORD PTR SS:[EBP-AC],EBX\par
+00D605C0    40                      INC EAX\par
+00D605C1    8D8D 70FFFFFF           LEA ECX,DWORD PTR SS:[EBP-90]\par
+00D605C7    8985 34FFFFFF           MOV DWORD PTR SS:[EBP-CC],EAX\par
+00D605CD    BA 80000000             MOV EDX,80\par
+00D605D2    8985 2CFFFFFF           MOV DWORD PTR SS:[EBP-D4],EAX\par
+00D605D8    8D85 2CFFFFFF           LEA EAX,DWORD PTR SS:[EBP-D4]\par
+00D605DE    8985 38FFFFFF           MOV DWORD PTR SS:[EBP-C8],EAX\par
+00D605E4    8D85 38FFFFFF           LEA EAX,DWORD PTR SS:[EBP-C8]\par
+00D605EA    6A 01                   PUSH 1\par
+00D605EC    50                      PUSH EAX\par
+00D605ED    68 C4911F01             PUSH League_o.011F91C4\par
+00D605F2    68 BC0E3101             PUSH League_o.01310EBC\par
+00D605F7    E8 D7ACBAFF             CALL League_o.0090B2D3\par
+00D605FC    F3:0F1003               MOVSS XMM0,DWORD PTR DS:[EBX]\par
+00D60600    8D8D 70FFFFFF           LEA ECX,DWORD PTR SS:[EBP-90]\par
+00D60606    83C4 10                 ADD ESP,10\par
+00D60609    F3:0F1185 38FFFFFF      MOVSS DWORD PTR SS:[EBP-C8],XMM0\par
+00D60611    8D51 01                 LEA EDX,DWORD PTR DS:[ECX+1]\par
+00D60614    8A01                    MOV AL,BYTE PTR DS:[ECX]\par
+00D60616    41                      INC ECX\par
+00D60617    84C0                    TEST AL,AL\par
+00D60619  ^ 75 F9                   JNZ SHORT League_o.00D60614\par
+00D6061B    33FF                    XOR EDI,EDI\par
+00D6061D    BB C59D1C81             MOV EBX,811C9DC5\par
+00D60622    2BCA                    SUB ECX,EDX\par
+00D60624    8D95 70FFFFFF           LEA EDX,DWORD PTR SS:[EBP-90]\par
+00D6062A    74 17                   JE SHORT League_o.00D60643\par
+00D6062C    8D6424 00               LEA ESP,DWORD PTR SS:[ESP]\par
+00D60630    0FB602                  MOVZX EAX,BYTE PTR DS:[EDX]\par
+00D60633    8D52 01                 LEA EDX,DWORD PTR DS:[EDX+1]\par
+00D60636    33C3                    XOR EAX,EBX\par
+00D60638    47                      INC EDI\par
+00D60639    69D8 93010001           IMUL EBX,EAX,League_o.01000193\par
+00D6063F    3BF9                    CMP EDI,ECX\par
+00D60641  ^ 72 ED                   JB SHORT League_o.00D60630\par
+00D60643    3BB5 44FFFFFF           CMP ESI,DWORD PTR SS:[EBP-BC]\par
+00D60649    75 1A                   JNZ SHORT League_o.00D60665\par
+00D6064B    51                      PUSH ECX\par
+00D6064C    8D8D 3CFFFFFF           LEA ECX,DWORD PTR SS:[EBP-C4]\par
+00D60652    E8 696C82FF             CALL League_o.005872C0\par
+00D60657    8BB5 40FFFFFF           MOV ESI,DWORD PTR SS:[EBP-C0]\par
+00D6065D    F3:0F1085 38FFFFFF      MOVSS XMM0,DWORD PTR SS:[EBP-C8]\par
+00D60665    85F6                    TEST ESI,ESI\par
+00D60667    74 0E                   JE SHORT League_o.00D60677\par
+00D60669    891E                    MOV DWORD PTR DS:[ESI],EBX\par
+00D6066B    F3:0F1146 04            MOVSS DWORD PTR DS:[ESI+4],XMM0\par
+00D60670    C746 08 FFFFFFFF        MOV DWORD PTR DS:[ESI+8],-1\par
+00D60677    8B9D 54FFFFFF           MOV EBX,DWORD PTR SS:[EBP-AC]\par
+00D6067D    83C6 0C                 ADD ESI,0C\par
+00D60680    8B85 34FFFFFF           MOV EAX,DWORD PTR SS:[EBP-CC]\par
+00D60686    83C3 04                 ADD EBX,4\par
+00D60689    89B5 40FFFFFF           MOV DWORD PTR SS:[EBP-C0],ESI\par
+00D6068F    899D 54FFFFFF           MOV DWORD PTR SS:[EBP-AC],EBX\par
+00D60695    83F8 10                 CMP EAX,10\par
+00D60698  ^ 0F8C 22FFFFFF           JL League_o.00D605C0\par
+00D6069E    8B8D 30FFFFFF           MOV ECX,DWORD PTR SS:[EBP-D0]\par
+00D606A4    8D85 3CFFFFFF           LEA EAX,DWORD PTR SS:[EBP-C4]\par
+00D606AA    50                      PUSH EAX\par
+00D606AB    8D95 48FFFFFF           LEA EDX,DWORD PTR SS:[EBP-B8]\par
+00D606B1    E8 1AE2E4FF             CALL League_o.00BAE8D0\par
+00D606B6    8B85 3CFFFFFF           MOV EAX,DWORD PTR SS:[EBP-C4]\par
+00D606BC    83C4 04                 ADD ESP,4\par
+00D606BF    85C0                    TEST EAX,EAX\par
+00D606C1    74 09                   JE SHORT League_o.00D606CC\par
+00D606C3    50                      PUSH EAX\par
+00D606C4    E8 1696A7FF             CALL League_o.007D9CDF\par
+00D606C9    83C4 04                 ADD ESP,4\par
+00D606CC    8B9D 48FFFFFF           MOV EBX,DWORD PTR SS:[EBP-B8]\par
+\cf1 00D606D2    85DB                    TEST EBX,EBX                             ; 85DB74418BBD\cf0\par
+00D606D4    74 41                   JE SHORT League_o.00D60717\par
+00D606D6    8BBD 4CFFFFFF           MOV EDI,DWORD PTR SS:[EBP-B4]\par
+00D606DC    3BDF                    CMP EBX,EDI\par
+00D606DE    74 2E                   JE SHORT League_o.00D6070E\par
+00D606E0    8D73 18                 LEA ESI,DWORD PTR DS:[EBX+18]\par
+00D606E3    833E 10                 CMP DWORD PTR DS:[ESI],10\par
+00D606E6    72 0B                   JB SHORT League_o.00D606F3\par
+00D606E8    FF76 EC                 PUSH DWORD PTR DS:[ESI-14]\par
+00D606EB    E8 EF95A7FF             CALL League_o.007D9CDF\par
+00D606F0    83C4 04                 ADD ESP,4\par
+00D606F3    C706 0F000000           MOV DWORD PTR DS:[ESI],0F\par
+00D606F9    C746 FC 00000000        MOV DWORD PTR DS:[ESI-4],0\par
+00D60700    C646 EC 00              MOV BYTE PTR DS:[ESI-14],0\par
+00D60704    83C6 1C                 ADD ESI,1C\par
+00D60707    8D46 E8                 LEA EAX,DWORD PTR DS:[ESI-18]\par
+00D6070A    3BC7                    CMP EAX,EDI\par
+00D6070C  ^ 75 D5                   JNZ SHORT League_o.00D606E3\par
+00D6070E    53                      PUSH EBX\par
+00D6070F    E8 CB95A7FF             CALL League_o.007D9CDF\par
+00D60714    83C4 04                 ADD ESP,4\par
+00D60717    8B4D F4                 MOV ECX,DWORD PTR SS:[EBP-C]\par
+00D6071A    64:890D 00000000        MOV DWORD PTR FS:[0],ECX\par
+00D60721    59                      POP ECX\par
+00D60722    5F                      POP EDI\par
+00D60723    5E                      POP ESI\par
+00D60724    5B                      POP EBX\par
+00D60725    8B4D F0                 MOV ECX,DWORD PTR SS:[EBP-10]\par
+00D60728    33CD                    XOR ECX,EBP \cf1 33??E8????????8BE55DC3\cf0\par
+\cf1 00D6072A    E8 ABB03700             CALL League_o.010DB7DA                   ; C_CALL_mid\cf0\par
+00D6072F    8BE5                    MOV ESP,EBP\par
+00D60731    5D                      POP EBP\par
+\cf1 00D60732    C3                      RETN                                     ; C_CALL_retn\cf0\par
+\par
+}
+ 

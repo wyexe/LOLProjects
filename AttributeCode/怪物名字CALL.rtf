@@ -1,0 +1,431 @@
+{\rtf1\ansi\ansicpg936\deff0{\fonttbl{\f0\fnil\fcharset134 \'cb\'ce\'cc\'e5;}}
+{\colortbl ;\red255\green0\blue0;}
+{\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\sa200\sl276\slmult1\lang2052\f0\fs22 2015.11.16\par
+00ACD1D0    8BFF                   mov     edi, edi\par
+00ACD1D2    55                     push    ebp\par
+00ACD1D3    8BEC                   mov     ebp, esp\par
+00ACD1D5    83E4 F8                and     esp, FFFFFFF8\par
+00ACD1D8    8B4D 08                mov     ecx, dword ptr [ebp+8]\par
+00ACD1DB    85C9                   test    ecx, ecx\par
+00ACD1DD    74 60                  je      short 00ACD23F\par
+00ACD1DF    3B0D 8C024C01          cmp     ecx, dword ptr [14C028C]\par
+00ACD1E5    75 0E                  jnz     short 00ACD1F5\par
+00ACD1E7    B9 4CD42001            mov     ecx, 0120D44C                    ; ASCII "game_announcement_replace_you"\par
+00ACD1EC    E8 2FFEF0FF            call    009DD020\par
+00ACD1F1    8BE5                   mov     esp, ebp\par
+00ACD1F3    5D                     pop     ebp\par
+00ACD1F4    C3                     retn\par
+00ACD1F5    8B51 18                mov     edx, dword ptr [ecx+18]\par
+00ACD1F8    8BC2                   mov     eax, edx\par
+\cf1 00ACD1FA    C1E8 0C                shr     eax, 0C                          ; C1E80CA8017411e8\cf0\par
+00ACD1FD    A8 01                  test    al, 1\par
+00ACD1FF    74 11                  je      short 00ACD212\par
+\cf1 00ACD201    E8 BA6B4400            call    00F13DC0\cf0\par
+00ACD206    8378 14 10             cmp     dword ptr [eax+14], 10\par
+00ACD20A    72 38                  jb      short 00ACD244\par
+00ACD20C    8B00                   mov     eax, dword ptr [eax]\par
+00ACD20E    8BE5                   mov     esp, ebp\par
+00ACD210    5D                     pop     ebp\par
+00ACD211    C3                     retn\par
+00ACD212    8BC2                   mov     eax, edx\par
+00ACD214    C1E8 0D                shr     eax, 0D\par
+00ACD217    A8 01                  test    al, 1\par
+00ACD219    74 0E                  je      short 00ACD229\par
+00ACD21B    B9 A0F01A01            mov     ecx, 011AF0A0                    ; ASCII "game_announcement_replace_aturret"\par
+00ACD220    E8 FBFDF0FF            call    009DD020\par
+00ACD225    8BE5                   mov     esp, ebp\par
+00ACD227    5D                     pop     ebp\par
+00ACD228    C3                     retn\par
+00ACD229    C1EA 0B                shr     edx, 0B\par
+00ACD22C    F6C2 01                test    dl, 1\par
+00ACD22F    74 0E                  je      short 00ACD23F\par
+00ACD231    B9 985F2901            mov     ecx, 01295F98                    ; ASCII "game_announcement_replace_aminion"\par
+00ACD236    E8 E5FDF0FF            call    009DD020\par
+00ACD23B    8BE5                   mov     esp, ebp\par
+00ACD23D    5D                     pop     ebp\par
+00ACD23E    C3                     retn\par
+00ACD23F    B8 CB7F2701            mov     eax, 01277FCB\par
+00ACD244    8BE5                   mov     esp, ebp\par
+00ACD246    5D                     pop     ebp\par
+00ACD247    C3                     retn\par
+\par
+00FC8F30    8BFF            MOV EDI,EDI\par
+00FC8F32    55              PUSH EBP\par
+00FC8F33    8BEC            MOV EBP,ESP\par
+00FC8F35    51              PUSH ECX\par
+00FC8F36    56              PUSH ESI\par
+00FC8F37    8BF1            MOV ESI,ECX\par
+00FC8F39    57              PUSH EDI\par
+00FC8F3A    8B86 F4080000   MOV EAX,DWORD PTR DS:[ESI+8F4]\par
+00FC8F40    85C0            TEST EAX,EAX\par
+00FC8F42    0F85 D1010000   JNZ League_o.00FC9119\par
+00FC8F48    FFB6 F0080000   PUSH DWORD PTR DS:[ESI+8F0]\par
+00FC8F4E    E8 BD87A9FF     CALL League_o.00A61710\par
+00FC8F53    8BF8            MOV EDI,EAX\par
+00FC8F55    85FF            TEST EDI,EDI\par
+00FC8F57    0F84 96000000   JE League_o.00FC8FF3\par
+00FC8F5D    8BCF            MOV ECX,EDI\par
+\cf1 00FC8F5F    E8 5CAEF4FF     CALL League_o.00F13DC0                   ; C_CALL_GetName\par
+00FC8F64    8378 14 10      CMP DWORD PTR DS:[EAX+14],10             ; 8378141072028B008B4D08BA80000000\cf0\par
+00FC8F68    72 02           JB SHORT League_o.00FC8F6C\par
+00FC8F6A    8B00            MOV EAX,DWORD PTR DS:[EAX]\par
+00FC8F6C    8B4D 08         MOV ECX,DWORD PTR SS:[EBP+8]\par
+00FC8F6F    BA 80000000     MOV EDX,80\par
+00FC8F74    50              PUSH EAX\par
+00FC8F75    E8 9143C3FF     CALL League_o.00BFD30B\par
+00FC8F7A    8B87 E8040000   MOV EAX,DWORD PTR DS:[EDI+4E8]\par
+00FC8F80    8D8F E8040000   LEA ECX,DWORD PTR DS:[EDI+4E8]\par
+00FC8F86    83C4 04         ADD ESP,4\par
+00FC8F89    FF10            CALL DWORD PTR DS:[EAX]\par
+00FC8F8B    85C0            TEST EAX,EAX\par
+00FC8F8D    74 1F           JE SHORT League_o.00FC8FAE\par
+00FC8F8F    8B87 04330000   MOV EAX,DWORD PTR DS:[EDI+3304]\par
+00FC8F95    85C0            TEST EAX,EAX\par
+00FC8F97    74 0B           JE SHORT League_o.00FC8FA4\par
+00FC8F99    8B40 1C         MOV EAX,DWORD PTR DS:[EAX+1C]\par
+00FC8F9C    8B80 0C060000   MOV EAX,DWORD PTR DS:[EAX+60C]\par
+00FC8FA2    EB 0F           JMP SHORT League_o.00FC8FB3\par
+00FC8FA4    33C0            XOR EAX,EAX\par
+00FC8FA6    8B80 0C060000   MOV EAX,DWORD PTR DS:[EAX+60C]\par
+00FC8FAC    EB 05           JMP SHORT League_o.00FC8FB3\par
+00FC8FAE    B8 1CCD1E01     MOV EAX,League_o.011ECD1C                ; ASCII "(NULL)"\par
+00FC8FB3    8B4D 0C         MOV ECX,DWORD PTR SS:[EBP+C]\par
+00FC8FB6    BA 80000000     MOV EDX,80\par
+00FC8FBB    50              PUSH EAX\par
+00FC8FBC    E8 4A43C3FF     CALL League_o.00BFD30B\par
+00FC8FC1    8B07            MOV EAX,DWORD PTR DS:[EDI]\par
+00FC8FC3    83C4 04         ADD ESP,4\par
+00FC8FC6    8BCF            MOV ECX,EDI\par
+00FC8FC8    FF90 B0020000   CALL DWORD PTR DS:[EAX+2B0]\par
+00FC8FCE    8B4D 10         MOV ECX,DWORD PTR SS:[EBP+10]\par
+00FC8FD1    8901            MOV DWORD PTR DS:[ECX],EAX\par
+00FC8FD3    8B45 14         MOV EAX,DWORD PTR SS:[EBP+14]\par
+00FC8FD6    8A8F 30020000   MOV CL,BYTE PTR DS:[EDI+230]\par
+00FC8FDC    8808            MOV BYTE PTR DS:[EAX],CL\par
+00FC8FDE    8BCF            MOV ECX,EDI\par
+00FC8FE0    E8 4BCC95FF     CALL League_o.00925C30\par
+00FC8FE5    8B08            MOV ECX,DWORD PTR DS:[EAX]\par
+00FC8FE7    8B45 18         MOV EAX,DWORD PTR SS:[EBP+18]\par
+00FC8FEA    8908            MOV DWORD PTR DS:[EAX],ECX\par
+00FC8FEC    5F              POP EDI\par
+00FC8FED    5E              POP ESI\par
+00FC8FEE    59              POP ECX\par
+00FC8FEF    5D              POP EBP\par
+00FC8FF0    C2 1400         RETN 14\par
+\par
+\par
+\par
+\par
+CALL Inside\par
+\cf1 00F13DC0 \cf0    8BFF                   mov     edi, edi\par
+00F13DC2    55                     push    ebp\par
+00F13DC3    8BEC                   mov     ebp, esp\par
+00F13DC5    83E4 F8                and     esp, FFFFFFF8\par
+00F13DC8    6A FF                  push    -1\par
+00F13DCA    68 B84C1401            push    01144CB8\par
+00F13DCF    64:A1 00000000         mov     eax, dword ptr fs:[0]\par
+00F13DD5    50                     push    eax\par
+00F13DD6    83EC 20                sub     esp, 20\par
+00F13DD9    A1 107D4A01            mov     eax, dword ptr [14A7D10]\par
+00F13DDE    33C4                   xor     eax, esp\par
+00F13DE0    894424 18              mov     dword ptr [esp+18], eax\par
+00F13DE4    53                     push    ebx\par
+00F13DE5    56                     push    esi\par
+00F13DE6    57                     push    edi\par
+00F13DE7    A1 107D4A01            mov     eax, dword ptr [14A7D10]\par
+00F13DEC    33C4                   xor     eax, esp\par
+00F13DEE    50                     push    eax\par
+00F13DEF    8D4424 30              lea     eax, dword ptr [esp+30]\par
+00F13DF3    64:A3 00000000         mov     dword ptr fs:[0], eax\par
+00F13DF9    8BF1                   mov     esi, ecx\par
+00F13DFB    8B06                   mov     eax, dword ptr [esi]\par
+00F13DFD    FF50 10                call    dword ptr [eax+10]\par
+00F13E00    8BD0                   mov     edx, eax\par
+00F13E02    837A 14 10             cmp     dword ptr [edx+14], 10\par
+00F13E06    72 02                  jb      short 00F13E0A\par
+00F13E08    8B12                   mov     edx, dword ptr [edx]\par
+00F13E0A    C74424 24 0F000000     mov     dword ptr [esp+24], 0F\par
+00F13E12    C74424 20 00000000     mov     dword ptr [esp+20], 0\par
+00F13E1A    C64424 10 00           mov     byte ptr [esp+10], 0\par
+00F13E1F    803A 00                cmp     byte ptr [edx], 0\par
+00F13E22    75 04                  jnz     short 00F13E28\par
+00F13E24    33C9                   xor     ecx, ecx\par
+00F13E26    EB 11                  jmp     short 00F13E39\par
+00F13E28    8BCA                   mov     ecx, edx\par
+00F13E2A    8D79 01                lea     edi, dword ptr [ecx+1]\par
+00F13E2D    8D49 00                lea     ecx, dword ptr [ecx]\par
+00F13E30    8A01                   mov     al, byte ptr [ecx]\par
+00F13E32    41                     inc     ecx\par
+00F13E33    84C0                   test    al, al\par
+00F13E35  ^ 75 F9                  jnz     short 00F13E30\par
+00F13E37    2BCF                   sub     ecx, edi\par
+00F13E39    51                     push    ecx\par
+00F13E3A    52                     push    edx\par
+00F13E3B    8D4C24 18              lea     ecx, dword ptr [esp+18]\par
+00F13E3F    E8 0C79EFFF            call    00E0B750\par
+00F13E44    8D96 B0000000          lea     edx, dword ptr [esi+B0]\par
+00F13E4A    C74424 38 00000000     mov     dword ptr [esp+38], 0\par
+00F13E52    8D4C24 10              lea     ecx, dword ptr [esp+10]\par
+00F13E56    E8 89EBEDFF            call    00DF29E4\par
+00F13E5B    84C0                   test    al, al\par
+00F13E5D    C74424 38 FFFFFFFF     mov     dword ptr [esp+38], -1\par
+00F13E65    0F94C3                 sete    bl\par
+00F13E68    837C24 24 10           cmp     dword ptr [esp+24], 10\par
+00F13E6D    72 0C                  jb      short 00F13E7B\par
+00F13E6F    FF7424 10              push    dword ptr [esp+10]\par
+00F13E73    E8 675E8CFF            call    007D9CDF\par
+00F13E78    83C4 04                add     esp, 4\par
+00F13E7B    C74424 24 0F000000     mov     dword ptr [esp+24], 0F\par
+00F13E83    C74424 20 00000000     mov     dword ptr [esp+20], 0\par
+00F13E8B    C64424 10 00           mov     byte ptr [esp+10], 0\par
+00F13E90    84DB                   test    bl, bl\par
+00F13E92    74 5D                  je      short 00F13EF1\par
+00F13E94    8B06                   mov     eax, dword ptr [esi]\par
+00F13E96    8BCE                   mov     ecx, esi\par
+00F13E98    FF50 10                call    dword ptr [eax+10]\par
+00F13E9B    8378 14 10             cmp     dword ptr [eax+14], 10\par
+00F13E9F    72 02                  jb      short 00F13EA3\par
+00F13EA1    8B00                   mov     eax, dword ptr [eax]\par
+00F13EA3    50                     push    eax\par
+00F13EA4    68 E0A63001            push    0130A6E0                         ; ASCII "Name conversion to multibyte failed for name: %s",LF\par
+00F13EA9    E8 025164FF            call    00558FB0\par
+00F13EAE    8B06                   mov     eax, dword ptr [esi]\par
+00F13EB0    83C4 08                add     esp, 8\par
+00F13EB3    8BCE                   mov     ecx, esi\par
+00F13EB5    FF50 10                call    dword ptr [eax+10]\par
+00F13EB8    8378 14 10             cmp     dword ptr [eax+14], 10\par
+00F13EBC    72 02                  jb      short 00F13EC0\par
+00F13EBE    8B00                   mov     eax, dword ptr [eax]\par
+00F13EC0    50                     push    eax\par
+00F13EC1    68 E0A63001            push    0130A6E0                         ; ASCII "Name conversion to multibyte failed for name: %s",LF\par
+00F13EC6    E8 E55064FF            call    00558FB0\par
+00F13ECB    8B06                   mov     eax, dword ptr [esi]\par
+00F13ECD    83C4 08                add     esp, 8\par
+00F13ED0    8BCE                   mov     ecx, esi\par
+00F13ED2    FF50 10                call    dword ptr [eax+10]\par
+00F13ED5    8378 14 10             cmp     dword ptr [eax+14], 10\par
+00F13ED9    72 02                  jb      short 00F13EDD\par
+00F13EDB    8B00                   mov     eax, dword ptr [eax]\par
+00F13EDD    50                     push    eax\par
+00F13EDE    68 E0A63001            push    0130A6E0                         ; ASCII "Name conversion to multibyte failed for name: %s",LF\par
+00F13EE3    6A 00                  push    0\par
+00F13EE5    6A 01                  push    1\par
+00F13EE7    6A 02                  push    2\par
+00F13EE9    E8 22BEA3FF            call    0094FD10\par
+00F13EEE    83C4 14                add     esp, 14\par
+00F13EF1    8D86 B0000000          lea     eax, dword ptr [esi+B0]\par
+00F13EF7    8B4C24 30              mov     ecx, dword ptr [esp+30]\par
+00F13EFB    64:890D 00000000       mov     dword ptr fs:[0], ecx\par
+00F13F02    59                     pop     ecx\par
+00F13F03    5F                     pop     edi\par
+00F13F04    5E                     pop     esi\par
+00F13F05    5B                     pop     ebx\par
+00F13F06    8B4C24 18              mov     ecx, dword ptr [esp+18]\par
+00F13F0A    33CC                   xor     ecx, esp\par
+00F13F0C    E8 C9781C00            call    010DB7DA\par
+00F13F11    8BE5                   mov     esp, ebp\par
+00F13F13    5D                     pop     ebp\par
+00F13F14    C3                     retn\par
+\par
+\par
+009B3E90    8A4424 13       MOV AL,BYTE PTR SS:[ESP+13]\par
+009B3E94    C68424 70010000>MOV BYTE PTR SS:[ESP+170],8\par
+009B3E9C    84C0            TEST AL,AL\par
+009B3E9E    74 2E           JE SHORT League_o.009B3ECE\par
+009B3EA0    807D 10 00      CMP BYTE PTR SS:[EBP+10],0\par
+009B3EA4    74 28           JE SHORT League_o.009B3ECE\par
+009B3EA6    8D9424 88000000 LEA EDX,DWORD PTR SS:[ESP+88]\par
+009B3EAD    8D8C24 E8000000 LEA ECX,DWORD PTR SS:[ESP+E8]\par
+009B3EB4    E8 6A8DDCFF     CALL League_o.0077CC23\par
+009B3EB9    8B4C24 1C       MOV ECX,DWORD PTR SS:[ESP+1C]\par
+009B3EBD    8D8424 88000000 LEA EAX,DWORD PTR SS:[ESP+88]\par
+009B3EC4    50              PUSH EAX\par
+009B3EC5    E8 46EAEDFF     CALL League_o.00892910\par
+009B3ECA    8A4424 13       MOV AL,BYTE PTR SS:[ESP+13]\par
+009B3ECE    83BC24 9C000000>CMP DWORD PTR SS:[ESP+9C],10\par
+009B3ED6    8DBC24 88000000 LEA EDI,DWORD PTR SS:[ESP+88]\par
+009B3EDD    0F43BC24 880000>CMOVNB EDI,DWORD PTR SS:[ESP+88]\par
+009B3EE5    84C0            TEST AL,AL\par
+009B3EE7    75 1C           JNZ SHORT League_o.009B3F05\par
+009B3EE9    8B45 24         MOV EAX,DWORD PTR SS:[EBP+24]\par
+009B3EEC    A8 20           TEST AL,20\par
+009B3EEE    75 15           JNZ SHORT League_o.009B3F05\par
+009B3EF0    83C8 40         OR EAX,40\par
+009B3EF3    8D4C24 58       LEA ECX,DWORD PTR SS:[ESP+58]\par
+009B3EF7    57              PUSH EDI\par
+009B3EF8    8945 24         MOV DWORD PTR SS:[EBP+24],EAX\par
+009B3EFB    E8 90E94A00     CALL League_o.00E62890\par
+009B3F00    E9 72030000     JMP League_o.009B4277\par
+009B3F05    68 F0DC3901     PUSH League_o.0139DCF0\par
+009B3F0A    8D4C24 2C       LEA ECX,DWORD PTR SS:[ESP+2C]\par
+009B3F0E    E8 5D585100     CALL League_o.00EC9770\par
+\cf1 009B3F13    8B45 24         MOV EAX,DWORD PTR SS:[EBP+24]            ; 8B45??2500010000C68424\cf0\par
+009B3F16    25 00010000     AND EAX,100\par
+009B3F1B    C68424 70010000>MOV BYTE PTR SS:[ESP+170],9\par
+009B3F23    894424 14       MOV DWORD PTR SS:[ESP+14],EAX\par
+009B3F27    74 22           JE SHORT League_o.009B3F4B\par
+009B3F29    B9 505C2A01     MOV ECX,League_o.012A5C50                ; ASCII "flash_hud_Chat_All"\par
+009B3F2E    E8 CDF03500     CALL League_o.00D13000\par
+009B3F33    50              PUSH EAX\par
+009B3F34    8D4C24 2C       LEA ECX,DWORD PTR SS:[ESP+2C]\par
+009B3F38    E8 C3B5D7FF     CALL League_o.0072F500\par
+009B3F3D    68 981F2C01     PUSH League_o.012C1F98\par
+009B3F42    8D4C24 2C       LEA ECX,DWORD PTR SS:[ESP+2C]\par
+009B3F46    E8 B5B5D7FF     CALL League_o.0072F500\par
+009B3F4B    C74424 54 0F000>MOV DWORD PTR SS:[ESP+54],0F\par
+009B3F53    C74424 50 00000>MOV DWORD PTR SS:[ESP+50],0\par
+009B3F5B    C64424 40 00    MOV BYTE PTR SS:[ESP+40],0\par
+009B3F60    C68424 70010000>MOV BYTE PTR SS:[ESP+170],0A\par
+009B3F68    85F6            TEST ESI,ESI\par
+009B3F6A    74 19           JE SHORT League_o.009B3F85\par
+009B3F6C    8BCE            MOV ECX,ESI\par
+\cf1 009B3F6E    E8 7D464F00     CALL League_o.00EA85F0                   ; \'b9\'d6\'ce\'ef\'c3\'fb\'d7\'d6CALL\cf0\par
+009B3F73    50              PUSH EAX\par
+009B3F74    8D8C24 BC000000 LEA ECX,DWORD PTR SS:[ESP+BC]\par
+009B3F7B    E8 609DD7FF     CALL League_o.0072DCE0\par
+009B3F80    83CB 02         OR EBX,2\par
+009B3F83    EB 11           JMP SHORT League_o.009B3F96\par
+009B3F85    68 F0DC3901     PUSH League_o.0139DCF0\par
+009B3F8A    8D4C24 74       LEA ECX,DWORD PTR SS:[ESP+74]\par
+009B3F8E    E8 DD575100     CALL League_o.00EC9770\par
+009B3F93    83CB 04         OR EBX,4\par
+009B3F96    50              PUSH EAX\par
+009B3F97    8D8C24 1C010000 LEA ECX,DWORD PTR SS:[ESP+11C]\par
+009B3F9E    E8 7DBBDAFF     CALL League_o.0075FB20\par
+009B3FA3    C78424 70010000>MOV DWORD PTR SS:[ESP+170],0C\par
+009B3FAE    F6C3 04         TEST BL,4\par
+009B3FB1    74 0C           JE SHORT League_o.009B3FBF\par
+009B3FB3    8D4C24 70       LEA ECX,DWORD PTR SS:[ESP+70]\par
+009B3FB7    83E3 FB         AND EBX,FFFFFFFB\par
+009B3FBA    E8 81E9BDFF     CALL League_o.00592940\par
+009B3FBF    C68424 70010000>MOV BYTE PTR SS:[ESP+170],0D\par
+009B3FC7    F6C3 02         TEST BL,2\par
+009B3FCA    74 0C           JE SHORT League_o.009B3FD8\par
+009B3FCC    8D8C24 B8000000 LEA ECX,DWORD PTR SS:[ESP+B8]\par
+009B3FD3    E8 68E9BDFF     CALL League_o.00592940\par
+009B3FD8    85F6            TEST ESI,ESI\par
+009B3FDA    74 0C           JE SHORT League_o.009B3FE8\par
+009B3FDC    8B06            MOV EAX,DWORD PTR DS:[ESI]\par
+009B3FDE    8BCE            MOV ECX,ESI\par
+009B3FE0    FF90 08020000   CALL DWORD PTR DS:[EAX+208]\par
+009B3FE6    EB 05           JMP SHORT League_o.009B3FED\par
+009B3FE8    B8 F0DC3901     MOV EAX,League_o.0139DCF0\par
+\par
+\par
+CALL inside\par
+00EA85F0    8BFF            MOV EDI,EDI\par
+00EA85F2    55              PUSH EBP\par
+00EA85F3    8BEC            MOV EBP,ESP\par
+00EA85F5    83E4 F8         AND ESP,FFFFFFF8\par
+00EA85F8    6A FF           PUSH -1\par
+00EA85FA    68 38C41D01     PUSH League_o.011DC438\par
+00EA85FF    64:A1 00000000  MOV EAX,DWORD PTR FS:[0]\par
+00EA8605    50              PUSH EAX\par
+00EA8606    83EC 20         SUB ESP,20\par
+00EA8609    A1 80005501     MOV EAX,DWORD PTR DS:[1550080]\par
+00EA860E    33C4            XOR EAX,ESP\par
+00EA8610    894424 18       MOV DWORD PTR SS:[ESP+18],EAX\par
+00EA8614    53              PUSH EBX\par
+00EA8615    56              PUSH ESI\par
+00EA8616    57              PUSH EDI\par
+00EA8617    A1 80005501     MOV EAX,DWORD PTR DS:[1550080]\par
+00EA861C    33C4            XOR EAX,ESP\par
+00EA861E    50              PUSH EAX\par
+00EA861F    8D4424 30       LEA EAX,DWORD PTR SS:[ESP+30]\par
+00EA8623    64:A3 00000000  MOV DWORD PTR FS:[0],EAX\par
+00EA8629    8BF1            MOV ESI,ECX\par
+00EA862B    8B06            MOV EAX,DWORD PTR DS:[ESI]\par
+00EA862D    FF50 10         CALL DWORD PTR DS:[EAX+10]\par
+00EA8630    8BD0            MOV EDX,EAX\par
+00EA8632    837A 14 10      CMP DWORD PTR DS:[EDX+14],10\par
+00EA8636    72 02           JB SHORT League_o.00EA863A\par
+00EA8638    8B12            MOV EDX,DWORD PTR DS:[EDX]\par
+00EA863A    C74424 24 0F000>MOV DWORD PTR SS:[ESP+24],0F\par
+00EA8642    C74424 20 00000>MOV DWORD PTR SS:[ESP+20],0\par
+00EA864A    C64424 10 00    MOV BYTE PTR SS:[ESP+10],0\par
+00EA864F    803A 00         CMP BYTE PTR DS:[EDX],0\par
+00EA8652    75 04           JNZ SHORT League_o.00EA8658\par
+00EA8654    33C9            XOR ECX,ECX\par
+00EA8656    EB 11           JMP SHORT League_o.00EA8669\par
+00EA8658    8BCA            MOV ECX,EDX\par
+00EA865A    8D79 01         LEA EDI,DWORD PTR DS:[ECX+1]\par
+00EA865D    8D49 00         LEA ECX,DWORD PTR DS:[ECX]\par
+00EA8660    8A01            MOV AL,BYTE PTR DS:[ECX]\par
+00EA8662    41              INC ECX\par
+00EA8663    84C0            TEST AL,AL\par
+00EA8665  ^ 75 F9           JNZ SHORT League_o.00EA8660\par
+00EA8667    2BCF            SUB ECX,EDI\par
+00EA8669    51              PUSH ECX\par
+00EA866A    52              PUSH EDX\par
+00EA866B    8D4C24 18       LEA ECX,DWORD PTR SS:[ESP+18]\par
+00EA866F    E8 3C76E7FF     CALL League_o.00D1FCB0\par
+00EA8674    8D96 B0000000   LEA EDX,DWORD PTR DS:[ESI+B0]\par
+00EA867A    C74424 38 00000>MOV DWORD PTR SS:[ESP+38],0\par
+00EA8682    8D4C24 10       LEA ECX,DWORD PTR SS:[ESP+10]\par
+00EA8686    E8 55980800     CALL League_o.00F31EE0\par
+00EA868B    84C0            TEST AL,AL\par
+00EA868D    C74424 38 FFFFF>MOV DWORD PTR SS:[ESP+38],-1\par
+00EA8695    0F94C3          SETE BL\par
+00EA8698    837C24 24 10    CMP DWORD PTR SS:[ESP+24],10\par
+00EA869D    72 0C           JB SHORT League_o.00EA86AB\par
+00EA869F    FF7424 10       PUSH DWORD PTR SS:[ESP+10]\par
+00EA86A3    E8 4F09AEFF     CALL League_o.00988FF7\par
+00EA86A8    83C4 04         ADD ESP,4\par
+00EA86AB    C74424 24 0F000>MOV DWORD PTR SS:[ESP+24],0F\par
+00EA86B3    C74424 20 00000>MOV DWORD PTR SS:[ESP+20],0\par
+00EA86BB    C64424 10 00    MOV BYTE PTR SS:[ESP+10],0\par
+00EA86C0    84DB            TEST BL,BL\par
+00EA86C2    74 5D           JE SHORT League_o.00EA8721\par
+00EA86C4    8B06            MOV EAX,DWORD PTR DS:[ESI]\par
+00EA86C6    8BCE            MOV ECX,ESI\par
+00EA86C8    FF50 10         CALL DWORD PTR DS:[EAX+10]\par
+00EA86CB    8378 14 10      CMP DWORD PTR DS:[EAX+14],10\par
+00EA86CF    72 02           JB SHORT League_o.00EA86D3\par
+00EA86D1    8B00            MOV EAX,DWORD PTR DS:[EAX]\par
+00EA86D3    50              PUSH EAX\par
+00EA86D4    68 E0202D01     PUSH League_o.012D20E0                   ; ASCII "Name conversion to multibyte failed for name: %s\par
+"\par
+00EA86D9    E8 F2E76BFF     CALL League_o.00566ED0\par
+00EA86DE    8B06            MOV EAX,DWORD PTR DS:[ESI]\par
+00EA86E0    83C4 08         ADD ESP,8\par
+00EA86E3    8BCE            MOV ECX,ESI\par
+00EA86E5    FF50 10         CALL DWORD PTR DS:[EAX+10]\par
+00EA86E8    8378 14 10      CMP DWORD PTR DS:[EAX+14],10\par
+00EA86EC    72 02           JB SHORT League_o.00EA86F0\par
+00EA86EE    8B00            MOV EAX,DWORD PTR DS:[EAX]\par
+00EA86F0    50              PUSH EAX\par
+00EA86F1    68 E0202D01     PUSH League_o.012D20E0                   ; ASCII "Name conversion to multibyte failed for name: %s\par
+"\par
+00EA86F6    E8 D5E76BFF     CALL League_o.00566ED0\par
+00EA86FB    8B06            MOV EAX,DWORD PTR DS:[ESI]\par
+00EA86FD    83C4 08         ADD ESP,8\par
+00EA8700    8BCE            MOV ECX,ESI\par
+00EA8702    FF50 10         CALL DWORD PTR DS:[EAX+10]\par
+00EA8705    8378 14 10      CMP DWORD PTR DS:[EAX+14],10\par
+00EA8709    72 02           JB SHORT League_o.00EA870D\par
+00EA870B    8B00            MOV EAX,DWORD PTR DS:[EAX]\par
+00EA870D    50              PUSH EAX\par
+00EA870E    68 E0202D01     PUSH League_o.012D20E0                   ; ASCII "Name conversion to multibyte failed for name: %s\par
+"\par
+00EA8713    6A 00           PUSH 0\par
+00EA8715    6A 01           PUSH 1\par
+00EA8717    6A 02           PUSH 2\par
+00EA8719    E8 D2F80500     CALL League_o.00F07FF0\par
+00EA871E    83C4 14         ADD ESP,14\par
+00EA8721    8D86 B0000000   LEA EAX,DWORD PTR DS:[ESI+B0]\par
+00EA8727    8B4C24 30       MOV ECX,DWORD PTR SS:[ESP+30]\par
+00EA872B    64:890D 0000000>MOV DWORD PTR FS:[0],ECX\par
+00EA8732    59              POP ECX\par
+00EA8733    5F              POP EDI\par
+00EA8734    5E              POP ESI\par
+00EA8735    5B              POP EBX\par
+00EA8736    8B4C24 18       MOV ECX,DWORD PTR SS:[ESP+18]\par
+00EA873A    33CC            XOR ECX,ESP\par
+00EA873C    E8 C3A02C00     CALL League_o.01172804\par
+00EA8741    8BE5            MOV ESP,EBP\par
+00EA8743    5D              POP EBP\par
+00EA8744    C3              RETN\par
+\par
+\par
+}
+ 

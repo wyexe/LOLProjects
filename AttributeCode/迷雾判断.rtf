@@ -1,0 +1,154 @@
+{\rtf1\ansi\ansicpg936\deff0{\fonttbl{\f0\fnil\fcharset134 \'cb\'ce\'cc\'e5;}}
+{\colortbl ;\red255\green0\blue0;}
+{\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\sa200\sl276\slmult1\lang2052\f0\fs22 009335B0    8BFF                    MOV EDI,EDI\par
+009335B2    55                      PUSH EBP\par
+009335B3    8BEC                    MOV EBP,ESP\par
+009335B5    83EC 18                 SUB ESP,18\par
+009335B8    53                      PUSH EBX\par
+009335B9    8BD9                    MOV EBX,ECX\par
+009335BB    8B83 20010000           MOV EAX,DWORD PTR DS:[EBX+120]\par
+009335C1    8D8B 20010000           LEA ECX,DWORD PTR DS:[EBX+120]\par
+009335C7    8B40 04                 MOV EAX,DWORD PTR DS:[EAX+4]\par
+009335CA    FFD0                    CALL EAX\par
+009335CC    84C0                    TEST AL,AL\par
+009335CE    0F85 9A060000           JNZ League_o.00933C6E\par
+009335D4    8B0D 500A1503           MOV ECX,DWORD PTR DS:[3150A50]\par
+009335DA    8B01                    MOV EAX,DWORD PTR DS:[ECX]\par
+009335DC    8B80 B4000000           MOV EAX,DWORD PTR DS:[EAX+B4]\par
+009335E2    FFD0                    CALL EAX\par
+009335E4    84C0                    TEST AL,AL\par
+009335E6    8B83 E0010000           MOV EAX,DWORD PTR DS:[EBX+1E0]\par
+009335EC    75 09                   JNZ SHORT League_o.009335F7\par
+009335EE    80B8 8C000000 00        CMP BYTE PTR DS:[EAX+8C],0\par
+009335F5    75 0D                   JNZ SHORT League_o.00933604\par
+009335F7    80B8 84000000 00        CMP BYTE PTR DS:[EAX+84],0\par
+009335FE    0F84 6A060000           JE League_o.00933C6E\par
+00933604    8A45 0C                 MOV AL,BYTE PTR SS:[EBP+C]\par
+00933607    8D4D 0C                 LEA ECX,DWORD PTR SS:[EBP+C]\par
+0093360A    56                      PUSH ESI\par
+0093360B    57                      PUSH EDI\par
+\cf1 0093360C    8BBB 3C2B0000           MOV EDI,DWORD PTR DS:[EBX+2B3C]          ; ...\cf0\par
+00933612    8DB3 E0040000           LEA ESI,DWORD PTR DS:[EBX+4E0]\par
+\cf1 00933618    83C7 70                 ADD EDI,70                               ; ...\cf0\par
+0093361B    51                      PUSH ECX\par
+0093361C    8BCE                    MOV ECX,ESI\par
+0093361E    897D F4                 MOV DWORD PTR SS:[EBP-C],EDI\par
+00933621    8887 E0020000           MOV BYTE PTR DS:[EDI+2E0],AL\par
+00933627    8B06                    MOV EAX,DWORD PTR DS:[ESI]\par
+00933629    FF50 20                 CALL DWORD PTR DS:[EAX+20]\par
+0093362C    F3:0F108B 8C2B0000      MOVSS XMM1,DWORD PTR DS:[EBX+2B8C]\par
+00933634    0F57C0                  XORPS XMM0,XMM0\par
+00933637    0F2EC8                  UCOMISS XMM1,XMM0\par
+0093363A    9F                      LAHF\par
+0093363B    F6C4 44                 TEST AH,44\par
+0093363E    7B 15                   JPO SHORT League_o.00933655\par
+00933640    F3:0F5C4D 08            SUBSS XMM1,DWORD PTR SS:[EBP+8]\par
+00933645    0F2FC1                  COMISS XMM0,XMM1\par
+00933648    76 03                   JBE SHORT League_o.0093364D\par
+0093364A    0F28C8                  MOVAPS XMM1,XMM0\par
+0093364D    F3:0F118B 8C2B0000      MOVSS DWORD PTR DS:[EBX+2B8C],XMM1\par
+00933655    8B83 70090000           MOV EAX,DWORD PTR DS:[EBX+970]\par
+0093365B    F3:0F1083 3C0B0000      MOVSS XMM0,DWORD PTR DS:[EBX+B3C]\par
+00933663    C1E8 0D                 SHR EAX,0D                               ;\par
+00933666    F3:0F1145 F8            MOVSS DWORD PTR SS:[EBP-8],XMM0\par
+\cf1 0093366B    A8 01                   TEST AL,1\par
+A80175??8B0D\cf0\par
+0093366D    75 39                   JNZ SHORT League_o.009336A8\par
+0093366F    8B0D 500A1503           MOV ECX,DWORD PTR DS:[3150A50]\par
+00933675    8B01                    MOV EAX,DWORD PTR DS:[ECX]\par
+00933677    8B80 B4000000           MOV EAX,DWORD PTR DS:[EAX+B4]\par
+0093367D    FFD0                    CALL EAX\par
+0093367F    84C0                    TEST AL,AL\par
+00933681    8B83 E0010000           MOV EAX,DWORD PTR DS:[EBX+1E0]\par
+00933687    75 09                   JNZ SHORT League_o.00933692\par
+00933689    80B8 8C000000 00        CMP BYTE PTR DS:[EAX+8C],0\par
+00933690    75 09                   JNZ SHORT League_o.0093369B\par
+00933692    80B8 84000000 00        CMP BYTE PTR DS:[EAX+84],0\par
+00933699    74 0D                   JE SHORT League_o.009336A8\par
+0093369B    80BF 29020000 00        CMP BYTE PTR DS:[EDI+229],0\par
+009336A2    74 04                   JE SHORT League_o.009336A8\par
+009336A4    32C0                    XOR AL,AL\par
+009336A6    EB 02                   JMP SHORT League_o.009336AA\par
+009336A8    B0 01                   MOV AL,1\par
+\cf1 009336AA    8887 DC020000           MOV BYTE PTR DS:[EDI+2DC],AL             ; dd [[0x14C028C]+2b3c]+70+2dc\cf0\par
+009336B0    8BCF                    MOV ECX,EDI\par
+009336B2    F3:0F1083 7C030000      MOVSS XMM0,DWORD PTR DS:[EBX+37C]\par
+009336BA    F3:0F5883 D00A0000      ADDSS XMM0,DWORD PTR DS:[EBX+AD0]\par
+009336C2    8B07                    MOV EAX,DWORD PTR DS:[EDI]\par
+009336C4    8B40 0C                 MOV EAX,DWORD PTR DS:[EAX+C]\par
+009336C7    F3:0F1145 0C            MOVSS DWORD PTR SS:[EBP+C],XMM0\par
+009336CC    FFD0                    CALL EAX\par
+009336CE    F3:0F1045 0C            MOVSS XMM0,DWORD PTR SS:[EBP+C]\par
+009336D3    D95D FC                 FSTP DWORD PTR SS:[EBP-4]\par
+009336D6    0F2E45 FC               UCOMISS XMM0,DWORD PTR SS:[EBP-4]\par
+009336DA    9F                      LAHF\par
+009336DB    F6C4 44                 TEST AH,44\par
+009336DE    7B 52                   JPO SHORT League_o.00933732\par
+009336E0    F3:0F1083 7C030000      MOVSS XMM0,DWORD PTR DS:[EBX+37C]\par
+009336E8    F3:0F5883 D00A0000      ADDSS XMM0,DWORD PTR DS:[EBX+AD0]\par
+009336F0    8B8F 00010000           MOV ECX,DWORD PTR DS:[EDI+100]\par
+009336F6    57                      PUSH EDI\par
+009336F7    F3:0F1145 0C            MOVSS DWORD PTR SS:[EBP+C],XMM0\par
+009336FC    E8 77524D00             CALL League_o.00E08978\par
+00933701    F3:0F1005 DC581F01      MOVSS XMM0,DWORD PTR DS:[11F58DC]\par
+00933709    F3:0F104D 0C            MOVSS XMM1,DWORD PTR SS:[EBP+C]\par
+0093370E    0F2FC8                  COMISS XMM1,XMM0\par
+00933711    77 0B                   JA SHORT League_o.0093371E\par
+00933713    0F57C0                  XORPS XMM0,XMM0\par
+00933716    0F2FC1                  COMISS XMM0,XMM1\par
+\par
+\par
+\par
+00A62703   /75 21                   JNZ SHORT League_o.00A62726\par
+00A62705   |0F57C9                  XORPS XMM1,XMM1\par
+00A62708   |C745 C8 00000000        MOV DWORD PTR SS:[EBP-38],0\par
+00A6270F   |0F28C1                  MOVAPS XMM0,XMM1\par
+00A62712   |F3:0F1145 08            MOVSS DWORD PTR SS:[EBP+8],XMM0\par
+00A62717   |F3:0F1145 C4            MOVSS DWORD PTR SS:[EBP-3C],XMM0\par
+00A6271C   |F3:0F1145 F0            MOVSS DWORD PTR SS:[EBP-10],XMM0\par
+00A62721   |F3:0F1145 CC            MOVSS DWORD PTR SS:[EBP-34],XMM0\par
+00A62726   \\8B06                    MOV EAX,DWORD PTR DS:[ESI]\par
+00A62728    8BCE                    MOV ECX,ESI\par
+00A6272A    8B80 78020000           MOV EAX,DWORD PTR DS:[EAX+278]\par
+00A62730    FFD0                    CALL EAX\par
+00A62732    F3:0F1035 8CDC2001      MOVSS XMM6,DWORD PTR DS:[120DC8C]\par
+00A6273A    F3:0F102D 04182701      MOVSS XMM5,DWORD PTR DS:[1271804]\par
+00A62742    8B40 1C                 MOV EAX,DWORD PTR DS:[EAX+1C]\par
+00A62745    8B40 24                 MOV EAX,DWORD PTR DS:[EAX+24]\par
+00A62748    C1E8 16                 SHR EAX,16\par
+00A6274B    24 01                   AND AL,1\par
+00A6274D    0F85 CD000000           JNZ League_o.00A62820\par
+00A62753    807D 1C 00              CMP BYTE PTR SS:[EBP+1C],0\par
+00A62757    74 39                   JE SHORT League_o.00A62792\par
+00A62759    F3:0F1055 08            MOVSS XMM2,DWORD PTR SS:[EBP+8]\par
+00A6275E    F3:0F1045 F0            MOVSS XMM0,DWORD PTR SS:[EBP-10]\par
+00A62763    0F28CA                  MOVAPS XMM1,XMM2\par
+00A62766    F3:0F59C0               MULSS XMM0,XMM0\par
+00A6276A    F3:0F59CA               MULSS XMM1,XMM2\par
+00A6276E    F3:0F58C1               ADDSS XMM0,XMM1\par
+00A62772    E8 B9F53600             CALL League_o.00DD1D30\par
+00A62777    F3:0F1025 8CDC2001      MOVSS XMM4,DWORD PTR DS:[120DC8C]\par
+00A6277F    0F2FE0                  COMISS XMM4,XMM0\par
+\cf1 00A62782    72 09                   JB SHORT League_o.00A6278D               ; 72??0F2F05????????73??\cf0\par
+00A62784    0F2F05 04182701         COMISS XMM0,DWORD PTR DS:[1271804]\par
+00A6278B    73 05                   JNB SHORT League_o.00A62792\par
+00A6278D    8D45 C4                 LEA EAX,DWORD PTR SS:[EBP-3C]\par
+00A62790    EB 61                   JMP SHORT League_o.00A627F3\par
+00A62792    8B06                    MOV EAX,DWORD PTR DS:[ESI]\par
+00A62794    8BCE                    MOV ECX,ESI\par
+\cf1 00A62796    8B80 10020000           MOV EAX,DWORD PTR DS:[EAX+210]           ; ...\cf0\par
+00A6279C    FFD0                    CALL EAX\par
+00A6279E    8A80 68020000           MOV AL,BYTE PTR DS:[EAX+268]\par
+00A627A4    84C0                    TEST AL,AL\par
+00A627A6    74 68                   JE SHORT League_o.00A62810\par
+00A627A8    8B8E 3C2B0000           MOV ECX,DWORD PTR DS:[ESI+2B3C]\par
+00A627AE    F3:0F1035 8CDC2001      MOVSS XMM6,DWORD PTR DS:[120DC8C]\par
+00A627B6    F3:0F1081 60020000      MOVSS XMM0,DWORD PTR DS:[ECX+260]\par
+00A627BE    F3:0F1089 58020000      MOVSS XMM1,DWORD PTR DS:[ECX+258]\par
+00A627C6    F3:0F59C9               MULSS XMM1,XMM1\par
+00A627CA    F3:0F59C0               MULSS XMM0,XMM0\par
+00A627CE    F3:0F58C8               ADDSS XMM1,XMM0\par
+00A627D2    0F2FF1                  COMISS XMM6,XMM1\par
+\par
+}
+ 

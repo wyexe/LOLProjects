@@ -1,0 +1,204 @@
+{\rtf1\ansi\deff0{\fonttbl{\f0\fnil\fcharset134 \'cb\'ce\'cc\'e5;}}
+{\colortbl ;\red255\green0\blue0;}
+{\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\sa200\sl276\slmult1\lang2052\f0\fs22 00BA0430    8BFF            mov     edi, edi\par
+00BA0432    53              push    ebx\par
+00BA0433    56              push    esi\par
+00BA0434    57              push    edi\par
+00BA0435    8B3D 647D5401   mov     edi, dword ptr [1547D64]\par
+00BA043B    83BF 70010000 0>cmp     dword ptr [edi+170], 1\par
+00BA0442    0F84 74040000   je      00BA08BC\par
+00BA0448    8B0D C4FE5401   mov     ecx, dword ptr [154FEC4]\par
+00BA044E    80B9 15030200 0>cmp     byte ptr [ecx+20315], 0\par
+00BA0455    0F85 61040000   jnz     00BA08BC\par
+00BA045B    C781 D4020100 F>mov     dword ptr [ecx+102D4], -1\par
+00BA0465    8B49 14         mov     ecx, dword ptr [ecx+14]\par
+00BA0468    6A 00           push    0\par
+00BA046A    8B01            mov     eax, dword ptr [ecx]\par
+00BA046C    FF90 94000000   call    dword ptr [eax+94]\par
+00BA0472    83BF 70010000 0>cmp     dword ptr [edi+170], 0\par
+00BA0479    0F85 DF030000   jnz     00BA085E\par
+00BA047F    833D 94815401 0>cmp     dword ptr [1548194], 0\par
+00BA0486    75 2D           jnz     short 00BA04B5\par
+00BA0488    8B0D A8E31D03   mov     ecx, dword ptr [31DE3A8]\par
+00BA048E    8B01            mov     eax, dword ptr [ecx]\par
+00BA0490    8B80 B4000000   mov     eax, dword ptr [eax+B4]\par
+00BA0496    FFD0            call    eax\par
+00BA0498    84C0            test    al, al\par
+00BA049A    74 19           je      short 00BA04B5\par
+00BA049C    8BCF            mov     ecx, edi\par
+00BA049E    E8 7DCFCCFF     call    0086D420\par
+00BA04A3    C687 09020000 0>mov     byte ptr [edi+209], 0\par
+00BA04AA    C605 4D735301 0>mov     byte ptr [153734D], 0\par
+00BA04B1    5F              pop     edi\par
+00BA04B2    5E              pop     esi\par
+00BA04B3    5B              pop     ebx\par
+00BA04B4    C3              retn\par
+00BA04B5    80BF A5010000 0>cmp     byte ptr [edi+1A5], 0\par
+00BA04BC    74 17           je      short 00BA04D5\par
+00BA04BE    80BF 6C010000 0>cmp     byte ptr [edi+16C], 0\par
+00BA04C5    74 0E           je      short 00BA04D5\par
+00BA04C7    833D FCE89201 0>cmp     dword ptr [192E8FC], 0\par
+00BA04CE    74 05           je      short 00BA04D5\par
+00BA04D0    E8 ABA7A3FF     call    005DAC80\par
+00BA04D5    8B1D C4FE5401   mov     ebx, dword ptr [154FEC4]\par
+00BA04DB    33F6            xor     esi, esi\par
+00BA04DD    8D49 00         lea     ecx, dword ptr [ecx]\par
+00BA04E0    8B4B 14         mov     ecx, dword ptr [ebx+14]\par
+00BA04E3    6A 01           push    1\par
+00BA04E5    6A 04           push    4\par
+00BA04E7    56              push    esi\par
+00BA04E8    8B01            mov     eax, dword ptr [ecx]\par
+00BA04EA    FF50 70         call    dword ptr [eax+70]\par
+00BA04ED    8B4B 14         mov     ecx, dword ptr [ebx+14]\par
+00BA04F0    6A 01           push    1\par
+00BA04F2    6A 05           push    5\par
+00BA04F4    56              push    esi\par
+00BA04F5    8B01            mov     eax, dword ptr [ecx]\par
+00BA04F7    FF50 70         call    dword ptr [eax+70]\par
+00BA04FA    8B4B 14         mov     ecx, dword ptr [ebx+14]\par
+00BA04FD    6A 01           push    1\par
+00BA04FF    6A 06           push    6\par
+00BA0501    56              push    esi\par
+00BA0502    8B01            mov     eax, dword ptr [ecx]\par
+00BA0504    FF50 70         call    dword ptr [eax+70]\par
+00BA0507    46              inc     esi\par
+00BA0508    83FE 10         cmp     esi, 10\par
+00BA050B  ^ 7C D3           jl      short 00BA04E0\par
+00BA050D    B9 00080000     mov     ecx, 800\par
+00BA0512    E8 09D6C9FF     call    0083DB20\par
+00BA0517    8B0D C4FE5401   mov     ecx, dword ptr [154FEC4]\par
+00BA051D    50              push    eax\par
+\cf1 00BA051E    6A 00           push    0                                ; 6A00E8????????8B0D????????85??7405\cf0\par
+00BA0520    E8 7BFA2F00     call    00E9FFA0\par
+\cf1 00BA0525    8B0D 3CE05401   mov     ecx, dword ptr [154E03C]         ; BuffBase\cf0\par
+00BA052B    85C9            test    ecx, ecx\par
+00BA052D    74 05           je      short 00BA0534\par
+00BA052F    E8 FC941200     call    00CC9A30\par
+00BA0534    8B0D DC7D5401   mov     ecx, dword ptr [1547DDC]\par
+00BA053A    85C9            test    ecx, ecx\par
+00BA053C    74 05           je      short 00BA0543\par
+00BA053E    E8 4DE61B00     call    00D5EB90\par
+00BA0543    8B8F B4000000   mov     ecx, dword ptr [edi+B4]\par
+00BA0549    85C9            test    ecx, ecx\par
+00BA054B    74 05           je      short 00BA0552\par
+00BA054D    E8 EED92C00     call    00E6DF40\par
+00BA0552    80BF 6C010000 0>cmp     byte ptr [edi+16C], 0\par
+00BA0559    74 51           je      short 00BA05AC\par
+00BA055B    E8 1037C8FF     call    00823C70\par
+00BA0560    8B35 90F65401   mov     esi, dword ptr [154F690]\par
+00BA0566    8BC8            mov     ecx, eax\par
+00BA0568    8B01            mov     eax, dword ptr [ecx]\par
+00BA056A    8B40 10         mov     eax, dword ptr [eax+10]\par
+00BA056D    FFD0            call    eax\par
+00BA056F    0FB6C0          movzx   eax, al\par
+00BA0572    8BCE            mov     ecx, esi\par
+00BA0574    50              push    eax\par
+00BA0575    E8 460ADDFF     call    00970FC0\par
+00BA057A    80BF A8010000 0>cmp     byte ptr [edi+1A8], 0\par
+00BA0581    74 07           je      short 00BA058A\par
+00BA0583    C687 A8010000 0>mov     byte ptr [edi+1A8], 0\par
+00BA058A    80BF 6C010000 0>cmp     byte ptr [edi+16C], 0\par
+00BA0591    74 19           je      short 00BA05AC\par
+00BA0593    8B0D 90F65401   mov     ecx, dword ptr [154F690]\par
+00BA0599    F3:0F100D ACE61>movss   xmm1, dword ptr [31DE6AC]\par
+00BA05A1    FF71 20         push    dword ptr [ecx+20]\par
+00BA05A4    8B49 18         mov     ecx, dword ptr [ecx+18]\par
+00BA05A7    E8 24B4CFFF     call    0089B9D0\par
+00BA05AC    E8 4FA0DCFF     call    0096A600\par
+00BA05B1    8BC8            mov     ecx, eax\par
+00BA05B3    8B10            mov     edx, dword ptr [eax]\par
+00BA05B5    FF52 2C         call    dword ptr [edx+2C]\par
+00BA05B8    83BF EC000000 0>cmp     dword ptr [edi+EC], 0\par
+00BA05BF    74 17           je      short 00BA05D8\par
+00BA05C1    E8 8AF03700     call    00F1F650\par
+00BA05C6    8B08            mov     ecx, dword ptr [eax]\par
+00BA05C8    3B48 04         cmp     ecx, dword ptr [eax+4]\par
+00BA05CB    74 0B           je      short 00BA05D8\par
+00BA05CD    8B8F EC000000   mov     ecx, dword ptr [edi+EC]\par
+00BA05D3    8B01            mov     eax, dword ptr [ecx]\par
+00BA05D5    FF50 28         call    dword ptr [eax+28]\par
+00BA05D8    8B8F 08010000   mov     ecx, dword ptr [edi+108]\par
+00BA05DE    85C9            test    ecx, ecx\par
+00BA05E0    74 05           je      short 00BA05E7\par
+00BA05E2    8B01            mov     eax, dword ptr [ecx]\par
+00BA05E4    FF50 08         call    dword ptr [eax+8]\par
+00BA05E7    8B8F E0000000   mov     ecx, dword ptr [edi+E0]\par
+00BA05ED    85C9            test    ecx, ecx\par
+00BA05EF    74 05           je      short 00BA05F6\par
+00BA05F1    8B01            mov     eax, dword ptr [ecx]\par
+00BA05F3    FF50 28         call    dword ptr [eax+28]\par
+00BA05F6    83BF 80000000 0>cmp     dword ptr [edi+80], 5\par
+00BA05FD    74 0F           je      short 00BA060E\par
+00BA05FF    8B8F DC000000   mov     ecx, dword ptr [edi+DC]\par
+00BA0605    85C9            test    ecx, ecx\par
+00BA0607    74 05           je      short 00BA060E\par
+00BA0609    8B01            mov     eax, dword ptr [ecx]\par
+00BA060B    FF50 28         call    dword ptr [eax+28]\par
+00BA060E    8B8F E8000000   mov     ecx, dword ptr [edi+E8]\par
+00BA0614    85C9            test    ecx, ecx\par
+00BA0616    74 05           je      short 00BA061D\par
+00BA0618    8B01            mov     eax, dword ptr [ecx]\par
+00BA061A    FF50 28         call    dword ptr [eax+28]\par
+00BA061D    8B8F F4000000   mov     ecx, dword ptr [edi+F4]\par
+00BA0623    85C9            test    ecx, ecx\par
+00BA0625    74 05           je      short 00BA062C\par
+00BA0627    8B01            mov     eax, dword ptr [ecx]\par
+00BA0629    FF50 28         call    dword ptr [eax+28]\par
+00BA062C    8B8F F8000000   mov     ecx, dword ptr [edi+F8]\par
+00BA0632    85C9            test    ecx, ecx\par
+00BA0634    74 05           je      short 00BA063B\par
+00BA0636    8B01            mov     eax, dword ptr [ecx]\par
+00BA0638    FF50 28         call    dword ptr [eax+28]\par
+00BA063B    8B8F FC000000   mov     ecx, dword ptr [edi+FC]\par
+00BA0641    85C9            test    ecx, ecx\par
+00BA0643    74 05           je      short 00BA064A\par
+00BA0645    8B01            mov     eax, dword ptr [ecx]\par
+00BA0647    FF50 28         call    dword ptr [eax+28]\par
+00BA064A    8B8F C8000000   mov     ecx, dword ptr [edi+C8]\par
+00BA0650    85C9            test    ecx, ecx\par
+00BA0652    74 16           je      short 00BA066A\par
+00BA0654    8B01            mov     eax, dword ptr [ecx]\par
+00BA0656    8B40 04         mov     eax, dword ptr [eax+4]\par
+00BA0659    FFD0            call    eax\par
+00BA065B    84C0            test    al, al\par
+00BA065D    74 0B           je      short 00BA066A\par
+00BA065F    8B8F C8000000   mov     ecx, dword ptr [edi+C8]\par
+00BA0665    8B01            mov     eax, dword ptr [ecx]\par
+00BA0667    FF50 28         call    dword ptr [eax+28]\par
+00BA066A    8B8F CC000000   mov     ecx, dword ptr [edi+CC]\par
+00BA0670    85C9            test    ecx, ecx\par
+00BA0672    74 16           je      short 00BA068A\par
+00BA0674    8B01            mov     eax, dword ptr [ecx]\par
+00BA0676    8B40 04         mov     eax, dword ptr [eax+4]\par
+00BA0679    FFD0            call    eax\par
+00BA067B    84C0            test    al, al\par
+00BA067D    74 0B           je      short 00BA068A\par
+00BA067F    8B8F CC000000   mov     ecx, dword ptr [edi+CC]\par
+00BA0685    8B01            mov     eax, dword ptr [ecx]\par
+00BA0687    FF50 28         call    dword ptr [eax+28]\par
+00BA068A    83BF D0000000 0>cmp     dword ptr [edi+D0], 0\par
+00BA0691    74 6A           je      short 00BA06FD\par
+00BA0693    8B0D 94815401   mov     ecx, dword ptr [1548194]\par
+00BA0699    85C9            test    ecx, ecx\par
+00BA069B    74 44           je      short 00BA06E1\par
+00BA069D    8B81 20010000   mov     eax, dword ptr [ecx+120]\par
+00BA06A3    81C1 20010000   add     ecx, 120\par
+00BA06A9    8B40 04         mov     eax, dword ptr [eax+4]\par
+00BA06AC    FFD0            call    eax\par
+00BA06AE    8B8F D0000000   mov     ecx, dword ptr [edi+D0]\par
+00BA06B4    3C 01           cmp     al, 1\par
+00BA06B6    8B01            mov     eax, dword ptr [ecx]\par
+00BA06B8    8B40 04         mov     eax, dword ptr [eax+4]\par
+00BA06BB    75 13           jnz     short 00BA06D0\par
+00BA06BD    FFD0            call    eax\par
+00BA06BF    84C0            test    al, al\par
+00BA06C1    75 1E           jnz     short 00BA06E1\par
+00BA06C3    8B8F D0000000   mov     ecx, dword ptr [edi+D0]\par
+00BA06C9    8B01            mov     eax, dword ptr [ecx]\par
+00BA06CB    FF50 2C         call    dword ptr [eax+2C]\par
+00BA06CE    EB 11           jmp     short 00BA06E1\par
+00BA06D0    FFD0            call    eax\par
+00BA06D2    3C 01           cmp     al, 1\par
+\par
+}
+ 

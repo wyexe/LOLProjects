@@ -1,0 +1,11 @@
+D:\Visual Studio 2010\Projects\LOLProjects\WebLogin\obj\Debug\WebLogin.Form1.resources
+D:\Visual Studio 2010\Projects\LOLProjects\WebLogin\obj\Debug\WebLogin.Properties.Resources.resources
+D:\Visual Studio 2010\Projects\LOLProjects\WebLogin\obj\Debug\WebLogin.csproj.GenerateResource.Cache
+D:\Visual Studio 2010\Projects\LOLProjects\WebLogin\bin\Debug\WebLogin.exe.config
+D:\Visual Studio 2010\Projects\LOLProjects\WebLogin\bin\Debug\WebLogin.exe
+D:\Visual Studio 2010\Projects\LOLProjects\WebLogin\bin\Debug\WebLogin.pdb
+D:\Visual Studio 2010\Projects\LOLProjects\WebLogin\obj\Debug\WebLogin.exe
+D:\Visual Studio 2010\Projects\LOLProjects\WebLogin\obj\Debug\WebLogin.pdb
+D:\Visual Studio 2010\Projects\LOLProjects\Release\WebLogin.exe.config
+D:\Visual Studio 2010\Projects\LOLProjects\Release\WebLogin.exe
+D:\Visual Studio 2010\Projects\LOLProjects\Release\WebLogin.pdb
